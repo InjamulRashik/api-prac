@@ -60,7 +60,8 @@
           }
         })
           .then(response => response.json())
-          .then(json => console.log(json));
+          .then(data => console.log(data))
+          .catch(error => alert("Please Try Again Later"));
       }
       function displayUser(users) {
         // console.log("users", users);
